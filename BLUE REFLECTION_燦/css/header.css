@@ -3,17 +3,85 @@
 .header_menu {
     width: auto;
     clear: both;
-    margin-top: 0px;
     z-index: 1;
     overflow: hidden;
 }
 
 .global_navi {
     display: flex;
-    position: relative;
+    padding: 0%;
+    margin: 0%;
 }
 
 .global_navi li {
-    list-style: none;
+    flex: 1; /*メニュー要素を均等に配列*/
+    list-style: none; /*・を消す*/
+}
+
+.global_navi a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    padding: 14px 0;
+    color: #4169e1;
+}
+
+.global_navi div {
+    display: block;
+    height: 160px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    padding: 14px 0;
+    color: #4169e1;
+    cursor: pointer;
+}
+
+.newinfo_dropdown {
+    overflow: hidden;
+    position: absolute;
     width: 100%;
+    left: 0;
+    top: 2em;
+    width: 100%;
+    min-height: 0;
+    height: 0;
+    margin-left: -40px;
+    z-index: 3;
+    transition: min-height 0.5s;
+}
+
+.newinfo_dropdown a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 2px 0;
+    color: #4169e1;
+}
+
+.newinfo li a:hover {
+    opacity: 1;
+}
+
+.newinfo_dropdown.active {
+    min-height: 150px;
+}
+
+/*以下メニューをマウスオーバーしたときのアニメーション*/
+.global_navi a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #4169e1;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+}
+
+.global_navi a:hover::after {
+    transform: scale(1, 1);
 }

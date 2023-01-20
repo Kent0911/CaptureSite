@@ -11,20 +11,30 @@
 
     <body class="header">
         <header>
-            <!--サイト説明、ヘッダー画像-->
-    
-            <!--以下、攻略情報、Tips等-->
-            <nav class="header_menu">
-                <ul class="global_navi">
-                    <li><a href="index.html" title="Home" target="_top">ホーム</a></li>
-                    <li><a href="newinfo.html" title="newinfo" target="_top">最新情報</a></li>
-                    <li><a href="update.html" title="update" target="_top">アップデート</a></li>
-                    <li><a href="forbeginner.html" title="begineer" target="_top">初心者向け</a></li>
-                    <li><a href="character.html" title="character" target="_top">キャラクター</a></li>
-                    <li><a href="system.html" title="system" target="_top">システム</a></li>
-                    <li><a href="ivent.html" title="ivent" target="_top">イベント情報</a></li>
-                </ul>
-            </nav>
+
         </header>
+        <!--サイト説明、ヘッダー画像-->
+    
+        <!--以下、攻略情報、Tips等-->
+        <nav class="header_menu">
+            <ul class="global_navi">
+                <li><a href="index.html" title="Home" target="_top">ホーム</a></li>
+                <li class="newinfo"><div>最新情報
+                    <!--最新情報、詳細一覧-->
+                    <ul class="newinfo_dropdown">
+                        <li><a href="ivent.html" title="ivent" target="_top">イベント情報</a></li>
+                        <li><a href="gacha.html" title="gacha" target="_top">ガチャ</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li><a href="update.html" title="update" target="_top">アップデート</a></li>
+                <li><a href="forbeginner.html" title="begineer" target="_top">初心者向け</a></li>
+                <li><a href="character.html" title="character" target="_top">キャラクター</a></li>
+                <li><a href="system.html" title="system" target="_top">システム</a></li>
+                
+                <!--JavaScript-->
+                <script type="text/javascript" src="js/header.js"></script>
+            </ul>
+        </nav>
     </body>
 </html>
