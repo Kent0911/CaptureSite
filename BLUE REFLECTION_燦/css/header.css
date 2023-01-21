@@ -2,9 +2,11 @@
 
 .header_menu {
     width: auto;
+    height: 160px;
     clear: both;
     z-index: 1;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, .7);
 }
 
 .global_navi {
@@ -29,7 +31,6 @@
 
 .global_navi div {
     display: block;
-    height: 160px;
     margin: 0;
     text-align: center;
     position: relative;
@@ -42,13 +43,13 @@
     overflow: hidden;
     position: absolute;
     width: 100%;
-    left: 0;
+    left: 40%;
     top: 2em;
     width: 100%;
     min-height: 0;
     height: 0;
-    margin-left: -40px;
-    z-index: 3;
+    z-index: 1;
+    transform: translateX(-50%);
     transition: min-height 0.5s;
 }
 
@@ -56,7 +57,7 @@
     display: block;
     text-align: center;
     margin-top: 20px;
-    padding: 2px 0;
+    padding: 3px 0;
     color: #4169e1;
 }
 
@@ -85,3 +86,4 @@
 .global_navi a:hover::after {
     transform: scale(1, 1);
 }
+
